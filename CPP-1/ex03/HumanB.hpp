@@ -8,7 +8,7 @@ class HumanB
         Weapon* weap;
     public:
         HumanB(std::string n);
-        void setWeapon(Weapon w);
+        void setWeapon(Weapon &w);
         void attack();
         ~HumanB();
 };

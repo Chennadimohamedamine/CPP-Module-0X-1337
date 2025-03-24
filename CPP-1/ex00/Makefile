@@ -8,7 +8,7 @@ FLAGS = -std=c++98 -Wall -Wextra -Werror
 
 all: $(NAME)
 
-%.o: %.cpp ./Zombie.hpp
+%.o: %.cpp Zombie.hpp
 	$(CC) $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJFILE)

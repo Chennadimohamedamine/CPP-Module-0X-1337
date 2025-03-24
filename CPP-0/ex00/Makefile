@@ -1,7 +1,7 @@
 PROGRAM = megaphone
 SRCS = megaphone.cpp
 OBJS = $(SRCS:.cpp=.o)
-CXX = g++
+CXX = c++
 CFLAGS = -std=c++98 -Wall -Wextra -Werror
 %.o: %.cpp
 	$(CXX) $(CFLAGS) -c $< -o $@

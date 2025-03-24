@@ -3,16 +3,16 @@ FILE = main.cpp
 NAME = program
 
 OBJFILE = $(FILE:.cpp=.o)
-CC = g++
+CC = c++
 FLAGS = -std=c++98 -Wall -Wextra -Werror
 
 all: $(NAME)
 
-%.o: %.cpp ./Zombie.hpp
+%.o: %.cpp 
 	$(CC) $(FLAGS) -c $< -o $@
 
-$(NAME): $(FILE)
-	$(CC) $(FLAGS) $(FILE) -o $(NAME)
+$(NAME): $(OBJFILE)
+	$(CC) $(FLAGS) $(OBJFILE) -o $(NAME)
 
 clean:
 	rm -f $(OBJFILE)

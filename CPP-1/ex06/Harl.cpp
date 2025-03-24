@@ -24,11 +24,11 @@ void Harl::error( void )
     std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
 }
 
-void Harl::complain( std::string level )
+void Harl::complain(std::string level)
 {
     std::string levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
     int i;
-    for (i = 0; i < 4 ; i++)
+    for (i = 0; i < 4; i++)
     {
         if (levels[i] == level)
             break;
@@ -37,13 +37,18 @@ void Harl::complain( std::string level )
     {
         case 0:
             debug();
+            info();
+            warning();
+            error();break;
         case 1:
             info();
+            warning();
+            error();break;
         case 2:
             warning();
+            error();break;
         case 3:
-            error();
-            break;  
+            error();break;
         default:
             std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
     }

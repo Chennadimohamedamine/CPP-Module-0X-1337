@@ -1,9 +1,9 @@
 FILE = main.cpp Zombie.cpp zombieHorde.cpp
 
-NAME = zombie
+NAME = zombieHorde
 
 OBJFILE = $(FILE:.cpp=.o)
-CC = g++
+CC = c++
 FLAGS = -std=c++98 -Wall -Wextra -Werror
 
 all: $(NAME)
@@ -11,8 +11,8 @@ all: $(NAME)
 %.o: %.cpp Zombie.hpp
 	$(CC) $(FLAGS) -c $< -o $@
 
-$(NAME): $(FILE)
-	$(CC) $(FLAGS) $(FILE) -o $(NAME)
+$(NAME): $(OBJFILE)
+	$(CC) $(FLAGS) $(OBJFILE) -o $(NAME)
 
 clean:
 	rm -f $(OBJFILE)

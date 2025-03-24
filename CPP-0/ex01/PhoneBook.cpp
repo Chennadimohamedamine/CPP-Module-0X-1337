@@ -1,8 +1,8 @@
 #include "PhoneBook.hpp"
 
-int PhoneBook::index = 0;
-
-PhoneBook::PhoneBook() {}
+PhoneBook::PhoneBook() {
+    index = 0;
+}
 PhoneBook::~PhoneBook() {}
 
 void PhoneBook::addContact()
@@ -25,9 +25,9 @@ void PhoneBook::searchContact()
         std::cout << "No contacts available" << std::endl;
         return;
     }
-    std::cout << "------------------------------------------|" << std::endl;
-    std::cout << "index    |first name|lastname  |nickname  |" << std::endl;
-    std::cout << "------------------------------------------|" << std::endl;
+    std::cout << "---------+----------+----------+----------+" << std::endl;
+    std::cout << "    index|first name|  lastname|  nickname|" << std::endl;
+    std::cout << "---------+----------+----------+----------+" << std::endl;
     display();
     std::string input;
     int in;

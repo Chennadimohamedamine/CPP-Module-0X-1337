@@ -3,7 +3,7 @@ FILE = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 NAME = Weapon
 
 OBJFILE = $(FILE:%.cpp=%.o)
-CC = g++
+CC = c++
 FLAGS = -std=c++98 -Wall -Wextra -Werror
 
 all: $(NAME)
@@ -12,7 +12,7 @@ all: $(NAME)
 	$(CC) $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJFILE)
-	$(CC) $(FLAGS) $(FILE) -o $(NAME)
+	$(CC) $(FLAGS) $(OBJFILE) -o $(NAME)
 
 clean:
 	rm -f $(OBJFILE)

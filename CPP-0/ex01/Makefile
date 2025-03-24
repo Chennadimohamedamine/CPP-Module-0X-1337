@@ -3,7 +3,7 @@ PROGRAM = PhoneBook
 SRCS = PhoneBook.cpp Contact.cpp main.cpp utils.cpp 
 
 OBJS = $(SRCS:.cpp=.o)
-CXX = g++
+CXX = c++
 CFLAGS = -std=c++98 -Wall -Wextra -Werror
 
 all: $(PROGRAM)
