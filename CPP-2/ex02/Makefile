@@ -1,6 +1,6 @@
 FILE = Fixed.cpp main.cpp
 
-NAME = program
+NAME = Fixed
 
 OBJFILE = $(FILE:%.cpp=%.o)
 CC = c++
