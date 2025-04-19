@@ -12,6 +12,8 @@ These modules explore C++ syntax, concepts, and advanced programming paradigms. 
 Each module includes mandatory exercises, often with bonus tasks, and must be compiled using strict flags:  
 ```bash
 -Wall -Wextra -Werror -std=c++98
+```
+
 ## 🧩 Modules Breakdown
 
 ---
