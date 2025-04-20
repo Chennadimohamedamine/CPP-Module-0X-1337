@@ -23,7 +23,7 @@ std::string Cat::getType() const
 }
 void Cat::makeSound() const
 {
-    std::cout << "MAW MAW"<< std::endl;
+    std::cout << "Cats meow."<< std::endl;
 }
 
 Cat::~Cat(){

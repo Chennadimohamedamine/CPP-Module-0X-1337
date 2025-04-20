@@ -10,7 +10,9 @@ WrongCat::WrongCat(const WrongCat &wrongCat):WrongAnimal(wrongCat)
 }
 WrongCat &WrongCat::operator=(WrongCat const  &wrongCat){
     std::cout << "Copy assignment operator WrongCat is called" <<std::endl;
-    this->type = wrongCat.type; 
+    if (this != &wrongCat) {
+        this->type = wrongCat.type; 
+    }
     return (*this);
 }
 void WrongCat::makeSound() const

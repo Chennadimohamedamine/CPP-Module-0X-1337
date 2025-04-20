@@ -3,8 +3,10 @@
 #include <iostream>
 
 class Brain{
-    public:
+    
+    private:
         std::string ideas[100];
+    public:
         Brain();
         Brain(const Brain &brain);
         Brain &operator=(Brain const  &brain);

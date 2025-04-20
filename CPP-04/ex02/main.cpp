@@ -2,6 +2,8 @@
 #include "Dog.hpp"
 #include "WrongCat.hpp"
 #include "WrongAnimal.hpp"
+#include "Animal.hpp"
+
 
 
 int main()
@@ -13,7 +15,11 @@ int main()
     i->makeSound();
     j->makeSound();
 
+    WrongAnimal *w = new WrongCat();
+    w->makeSound();
+    
     delete j;
     delete i;
+    delete w;
     return 0;
 }
